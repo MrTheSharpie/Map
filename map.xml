@@ -5,11 +5,8 @@
 <version>1.0.0</version>
 <objective>Be the first team to reach 150 points!</objective>
 <authors>
-    <author>hobbledehoy_</author>
     <author uuid="e57cbfb9-121f-4657-bd02-ef5ced857068" contribution="Author, aesthetics and xml"/> 
- <author>StockHedgeMan</author>
     <author uuid="eb722315-de22-43e7-a4a2-6d6395ceada1" contribution="Author and aesthetics"/> 
- <author>DiabolicForce</author>
     <author uuid="cc67ec01-4b98-4e65-b0ed-49c14c6cb88b" contribution="Author, aesthetics and xml"/> 
 </authors>
 <teams>
@@ -65,7 +62,7 @@
     <item amount="1" material="golden apple"/>
 </kill-reward>
 <armorkeep>
-    <item>iron chest-plate</item>
+    <item>iron chestplate</item>
 </armorkeep>
 <itemkeep>
     <item>iron ingot</item>
