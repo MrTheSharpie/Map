@@ -20,6 +20,7 @@
     <gamemode>TDM</gamemode>
     <gamemode>scorebox</gamemode>
 </gamemode>
+<timelock>true</timelock>
 <broadcasts>
     <tip after="30s">Gain more points by using the score boxes on the opposing side</tip>
 </broadcasts>
