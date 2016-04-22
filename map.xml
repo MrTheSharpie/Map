@@ -3,39 +3,43 @@
 <map proto="1.4.0">
 <name>Underground Experiment</name>
 <version>1.0.0</version>
-<objective>First team to 150 points wins!</objective>
+<objective>Be the first team to reach 150 points!</objective>
 <authors>
     <author>hobbledehoy_</author>
     <author uuid="e57cbfb9-121f-4657-bd02-ef5ced857068" contribution="Author, aesthetics and xml"/> 
  <author>StockHedgeMan</author>
     <author uuid="eb722315-de22-43e7-a4a2-6d6395ceada1" contribution="Author and aesthetics"/> 
  <author>DiabolicForce</author>
-    <author uuid="cc67ec01-4b98-4e65-b0ed-49c14c6cb88b" contribution="Author and aesthetics"/> 
+    <author uuid="cc67ec01-4b98-4e65-b0ed-49c14c6cb88b" contribution="Author, aesthetics and xml"/> 
 </authors>
+<teams>
+    <team id="red-team" color="dark red" overhead-color="dark-red" max="20" max-overfill="25">Red Team</team>
+    <team id="blue-team" color="blue" overhead-color="blue" max="20" max-overfill="25">Blue Team</team>
+</teams>
 <gamemode>
-<gamemode>tdm</gamemode>
-<gamemode>scorebox</gamemode>
+    <gamemode>TDM</gamemode>
+    <gamemode>scorebox</gamemode>
 </gamemode>
 <broadcasts>
-<tip after="30s">Gain more points by using the score boxes on the opposing side</tip>
+    <tip after="30s">Gain more points by using the score boxes on the opposing side</tip>
 </broadcasts>
 <score>
-<limit>150</limit>
-<kills>3</kills>
-<deaths>1</deaths>
-<box points="7" filter="only-red">
-<region><cuboid min="-1273,7,-344" max="-1283,12,-334"/></region>
-</box>
-<box points="7" filter="only-red">
-<region><cuboid min="-1273,7,-266" max="-1283,12,-276"/></region>
-</box>
-<box points="7" filter="only-blue">
-<region><cuboid min="-1431,7,-266" max="-1421,12,-276"/></region>
-</box>
-<box points="7" filter="only-blue">
-<region><cuboid min="-1431,7,-344" max="-1421,12,-334"/></region>
-</box>
-</score>
+    <limit>150</limit>
+    <kills>3</kills>
+    <deaths>1</deaths>
+    <box points="5" filter="only-red">
+    <region><cuboid min="-1273,7,-344" max="-1283,12,-334"/></region>
+    </box>
+    <box points="5" filter="only-red">
+    <region><cuboid min="-1273,7,-266" max="-1283,12,-276"/></region>
+    </box>
+    <box points="7" filter="only-blue">
+    <region><cuboid min="-1431,7,-266" max="-1421,12,-276"/></region>
+    </box>
+    <box points="7" filter="only-blue">
+    <region><cuboid min="-1431,7,-344" max="-1421,12,-334"/></region>
+    </box>
+    </score>
 <kits>
     <kit id="spawn" force="true">
  <potion duration="5" amplifier="1">heal</potion>
@@ -55,29 +59,25 @@
   <chestplate color=" 253192" material="leather tunic"/>
     </kit>
 </kits>
-<teams>
-<team id="red-team" color="dark red" overhead-color="dark-red" max="30" max-overfill="50">Red Team</team>
-<team id="blue-team" color="blue" overhead-color="blue" max="30" max-overfill="50">Blue Team</team>
-</teams>
 <kill-reward>
-<item amount="1" material="iron ingot"/> 
-<item amount="1" material="golden apple"/>
+    <item amount="1" material="iron ingot"/> 
+    <item amount="1" material="golden apple"/>
 </kill-reward>
 <armorkeep>
-<item>iron chest-plate</item>
+    <item>iron chest-plate</item>
 </armorkeep>
 <itemkeep>
-<item>iron ingot</item>
+    <item>iron ingot</item>
 </itemkeep>
 <spawns>
-<spawn team="blue" kit="blue">
-<regions yaw="90">
-<cuboid min="-1275,60,-306" max="-1277,60,-304"/>
-</regions>
+    <spawn team="blue" kit="blue">
+    <regions yaw="90">
+        <cuboid min="-1275,60,-306" max="-1277,60,-304"/>
+    </regions>
 </spawn>
 <spawn team="red" kit="red">
-<regions yaw="90">
-<cuboid min="-1429,60,-304" max="-1427,60,-306"/>
+    <regions yaw="90">
+        <cuboid min="-1429,60,-304" max="-1427,60,-306"/>
 </regions>
 </spawn>
 </spawns>
